@@ -18,11 +18,6 @@ forma.addEventListener("submit", (e) => {
 
     let body = `isPrivacyAccepted=${dat.isPrivacyAccepted}&isUsageAccepted=${dat.isUsageAccepted}&password=${dat.password}&email=${dat.email}&username=${dat.username}`;
 
-    if(dat.username === '' || dat.email === '' || dat.password === '' || !dat.isPrivacyAccepted || !dat.isUsageAccepted.checked || dat.password.length < 6) {
-        request("POST", newURL, body)
-            .then((data) => alert(data.message))
-    }
-    else {
         request("POST", newURL, body)
         .then(data => {
             if(isUsageAccepted.checked && isPrivacyAccepted.checked) {
@@ -31,5 +26,4 @@ forma.addEventListener("submit", (e) => {
             localStorage.setItem('key', data.message)
             localStorage.setItem('data', dat.username)
         })
-    }
 })

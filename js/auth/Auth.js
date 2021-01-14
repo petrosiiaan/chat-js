@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
     }
     else {
         request("POST", authURL, sendData)
-        .then((data) => {
+        .then(() => {
             location.href = '/chat.html'
         })
     }

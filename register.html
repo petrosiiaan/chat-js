@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body id="body">
+    <div class="background"></div>
+    <div class="login-container">
+        <div class="login-asset">
+            <img class="login-asset-img" src="https://data.1freewallpapers.com/download/palm-tree-art-twilight-night-2560x1440.jpg" alt="kanep1">
+        </div>
+        <div class="login-login">
+            <div class="sign-in">
+                <h1>Sign Up Your Account</h1>
+                <div class="sign-account">
+                    <form id="forma">
+                    <div class="name">
+                        <label for="name">Write Your Username</label><br>
+                        <input type="text" id="username" placeholder="Name">
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Write Your Email</label><br>
+                        <input type="text" id="email" placeholder="Email">
+                    </div>
+                    <div class="password">
+                        <label for="password">Write Your Password</label> <br>
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="button-content">
+                    <button id="signUp">Sign Up</button>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" id="isPrivacyAccepted" value="0">
+                    <p id="privacy">Privacy Policy</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="isUsageAccepted" value="0">
+                    <p id="usage">Usage</p>
+                </div>
+
+                </form>
+            </div>
+            <div class="links" id="links">
+                <a href="/index.html">Are you have an account?</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/api/config.js"></script>
+    <script src="js/api/request.js"></script>
+    <script src="/js/auth/Login.js"></script>
+    <script src="js/terms.js"></script>
+</body>
+</html>

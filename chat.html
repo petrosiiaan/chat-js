@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/chat.css">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="user-info-demo">
+            <i class="fas fa-user-circle"></i>
+            <div class="user-inf">
+                <p id="userName"> Hello! <!-- Username !--></p>
+                <h5 id="email">Email: <!-- email !--></h5>
+            </div>
+        </div>
+        <div class="sidebar-header">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="sidbar-user-content">
+            <!--Rendering-->
+        </div>
+    </div>
+    <div class="chat-content">
+        <div class="user-information">
+            <div class="info">
+                <div id="id" style="display: flex;">
+                    <h1>Profile ID: </h1>
+                    <h1 id="profId"></h1>
+                </div>
+                <h2 id="usName">Username: </h2>
+            </div>
+        </div>
+
+        <div class="message-field">
+            <!--Messages-->
+        </div>
+
+        <div class="input-message">
+            <input type="text">
+            <i class="fas fa-microphone"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/5b335a90ae.js" crossorigin="anonymous"></script>
+    <script src="js/api/config.js"></script>
+    <script src="js/api/request.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

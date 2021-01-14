@@ -24,6 +24,5 @@ forma.addEventListener("submit", (e) => {
                 location.href = '/chat.html'
             }
             localStorage.setItem('key', data.message)
-            localStorage.setItem('data', dat.username)
         })
 })
